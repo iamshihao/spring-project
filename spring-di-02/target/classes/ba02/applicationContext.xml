@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id = "student" class="com.example.ba01.Student">
+        <property name="name" value="曹操"/>
+        <property name="age" value="55"/>
+        <property name="school" ref="school"/>
+    </bean>
+    <bean id="school" class="com.example.ba02.School">
+        <property name="name" value="诸葛亮"/>
+        <property name="address" value="三国学院"/>
+    </bean>
+    <bean id="date" class="java.util.Date">
+        <property name="time" value="4546545641564"/>
+    </bean>
+
+</beans>
